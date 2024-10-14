@@ -1,0 +1,89 @@
+100  Days Of Coding Challenge!
+
+Day-78 Task:
+Read and understand the following Visual Guide about the Web Vitals.
+
+What are Web Vitals? https://roadmap.sh/guides/what-are-web-vitals
+
+//-------------------------------------------------------------------------------------------------------------------
+
+Web Vitals are a set of performance metrics introduced by Google to quantify and improve user experience on the web.
+These metrics provide insights into key areas of website performance, such as loading speed,
+interactivity, and visual stability.By focusing on these aspects, developers can create websites that are fast,
+responsive, and stable, leading to improved user satisfaction and higher search engine rankings.
+
+Core Web Vitals
+
+Core Web Vitals are a subset of Web Vitals that focus on the most critical elements of user experience.
+They measure three essential aspects:
+
+1. Loading Performance (Largest Contentful Paint - LCP):
+
+    * What it measures: LCP tracks the time it takes for the largest content element
+    (such as an image, video, or block of text) on the page to load and become visible to the user.
+
+    * Why it matters: A fast LCP ensures that users can quickly see the most important content on the page,
+    improving perceived load times.
+
+    * Ideal threshold: Less than 2.5 seconds.
+
+    * Optimization strategies: Compress and optimize images, reduce server response times using CDNs and caching,
+    and minimize render-blocking CSS and JavaScript.
+
+2. Interactivity (First Input Delay - FID):
+
+    * What it measures: FID quantifies the time it takes for a web page to respond to the first interaction,
+    such as a button click or a link.
+
+    * Why it matters: A low FID means users can interact with the page without frustrating delays,
+    leading to a more responsive experience.
+
+    * Ideal threshold: Less than 100 milliseconds.
+
+    * Optimization strategies: Minimize JavaScript execution time, defer non-essential JavaScript,
+    and break long tasks into smaller chunks.
+
+3. Visual Stability (Cumulative Layout Shift - CLS):
+
+    * What it measures: CLS evaluates how stable the page layout is during the loading process.
+    It tracks unexpected layout shifts that can happen when images, ads, or dynamic content are loaded after other elements.
+
+    * Why it matters: A low CLS ensures that users do not experience jarring movements or content shifts,
+    which can lead to poor usability.
+
+    * Ideal threshold: Less than 0.1.
+
+    * Optimization strategies: Always reserve space for images and ads,
+    avoid inserting new content above existing content unless triggered by user action, and specify size attributes for media elements.
+
+Other Important Web Vitals
+In addition to Core Web Vitals, several other metrics help developers gauge different aspects of performance:
+
+    * First Contentful Paint (FCP): Measures the time it takes for the browser to render the first piece of DOM content, such as text or images.
+    This is the first visual feedback users receive that the page is loading.
+
+    * Time to Interactive (TTI): Evaluates how long it takes for a page to become fully interactive,
+    meaning that it can respond to user input.
+
+    * Total Blocking Time (TBT): Tracks the amount of time during which the main thread is blocked by long tasks,
+    preventing the page from becoming interactive.
+
+    * Time to First Byte (TTFB): Measures how long it takes for the server to respond with the first byte of data.
+
+Why Web Vitals Matter
+Optimizing Web Vitals is essential for several reasons:
+
+1. User Experience: Websites with fast load times, responsive interactivity,
+and stable layouts offer a superior experience, leading to higher user engagement and satisfaction.
+
+2. Search Engine Ranking: Google uses Web Vitals as part of its ranking algorithm.
+Websites that perform well in these areas are more likely to rank higher in search results.
+
+3. Business Benefits: Fast, responsive, and stable websites are more likely to convert visitors into customers or subscribers.
+Improving Web Vitals can directly impact key metrics like conversion rates, retention, and overall revenue.
+
+Conclusion
+Web Vitals are a crucial tool for developers seeking to improve the user experience of their websites.
+By focusing on Core Web Vitals—LCP, FID, and CLS—as well as other supplementary metrics like FCP and TTI,
+developers can ensure that their websites are optimized for speed, responsiveness, and visual stability.
+These improvements not only enhance user satisfaction but also help with SEO performance, driving better business outcomes.
